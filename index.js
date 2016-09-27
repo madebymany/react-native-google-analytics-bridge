@@ -3,7 +3,7 @@
 const GoogleAnalyticsBridge = require("react-native").NativeModules.GoogleAnalyticsBridge;
 const GoogleTagManagerBridge = require("react-native").NativeModules.GoogleTagManagerBridge;
 
-let _trackerId = GoogleAnalyticsBridge.nativeTrackerId;
+let _trackerId; 
 
 const getTrackerId = () => {
     if (!_trackerId) {
